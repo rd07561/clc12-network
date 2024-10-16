@@ -100,7 +100,7 @@ module "app_sg" {
 
   name        = "App-SG"
   description = "App SG for web app"
-  vpc_id      = aws_vpc.main_vpc.id
+  vpc_id      = aws_vpc.main.id
   ingress_with_cidr_blocks = [
     {
       from_port   = 80
